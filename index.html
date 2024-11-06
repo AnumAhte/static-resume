@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Resume Builder</h1>
+            <form id="resumeForm">
+                <!-- Personal Information Section -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="text" id="address" placeholder="Address">
+                    <input type="tel" id="phone" placeholder="Phone Number">
+                    <input type="email" id="email" placeholder="Email">
+                </fieldset>
+                
+                <!-- Education Section -->
+                <fieldset>
+                    <legend>Education</legend>
+                    <input type="text" id="degree" placeholder="Degree">
+                </fieldset>
+
+                <!-- Skills Section -->
+                <fieldset>
+                    <legend>Skills</legend>
+                    <input type="text" id="skill" placeholder="Skill">
+                </fieldset>
+
+                <!-- Experience Section -->
+                <fieldset>
+                    <legend>Experience</legend>
+                    <input type="text" id="experience" placeholder="Experience">
+                </fieldset>
+
+                <!-- Languages Section -->
+                <fieldset>
+                    <legend>Languages</legend>
+                    <input type="text" id="languages" placeholder="Languages">
+                </fieldset>
+
+                <button type="submit">Generate Resume</button>
+            </form>
+        </div>
+        <div id="resumeOutput" class="resume-output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
